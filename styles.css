@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(216, 214, 214);
+}
+
+body {
+    background-color: black;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 2px solid red; */
+    font-size: 2rem;
+    padding: .5rem 0rem;
+    color: rgb(216, 214, 214);
+    border-bottom: 2px solid rgb(216, 214, 214);
+    position: fixed;
+    background-color: black;
+    top: 0;
+}
+
+.head > .name {
+    display: flex;
+    justify-content: flex-start;
+    /* color: rgb(216, 214, 214); */
+    padding-left: 1rem;
+    
+}
+
+.head > .top-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 2rem;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-section > .main-left,
+.main-section > .main-right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    /* border: 2px solid blue; */
+}
+
+.main-section > .main-left > .profile-picture {
+    /* margin: auto; */
+    border-radius: 50%;
+}
+
+.main-section > .main-right {
+    /* display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center; */
+    padding: 2.5rem;
+    flex-direction: column;
+    /* height: 1000px; */
+    /* border: 2px solid red; */
+}
+
+.main-section > .main-right > .main-quote {
+    color: rgb(216, 214, 214);
+    font-size: 2rem;
+  font-style: italic;
+}
+
+.main-section > .main-right > .main-quote:before {
+    content: open-quote;
+    font-size: 5rem;
+  }
+  
+.main-section > .main-right > .main-quote:after {
+    content: close-quote;
+    font-size: 5rem;
+  }
+
+.main-section > .main-right > .quote1, .quote2, .quote3 {
+    opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+.main-section > .main-right > .quote1 {
+    animation-delay: 500ms;
+}
+
+.main-section > .main-right > .quote2 {
+    animation-delay: 1500ms;
+}
+
+.main-section > .main-right > .quote3 {
+    animation-delay: 2500ms;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .test {
+    color: rgb(216, 214, 214);
+  }
