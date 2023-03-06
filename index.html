@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Bill Page</title>
 </head>
@@ -15,10 +16,10 @@
         <a href="#" class="projects">Projects
             <i class="fa fa-caret-down"></i>
         </a>
-        <a href="#cover-letter-linkup" class="cover-letter-link">Cover Letter</a>
-        <a href="#" class="hobbies">Hobbies</a>
-        <a href="#" class="past">My Past</a>
-        <a href="#" class="about-me">About Me</a>
+        <div class="cover-let">Cover Letter</div>
+        <div class="hobbies">Hobbies</div>
+        <div class="my-past">My Past</div>
+        <div class="about-me">About Me</div>
     </div>
 </header>
 
@@ -28,44 +29,65 @@
         <div class="main-left">
             <blockquote class="quote1 main-quote">I have put together this basic Website to help you get to know me.
             </blockquote>
-            <blockquote class="quote2 main-quote">Some bits are functionally and stylishly pointless but are here to show what I've learnt!</blockquote>        
-            <blockquote class="quote3 main-quote">I could have used a template to make it look better, but that wouldn't accurately show my progress!</blockquote>
+            <blockquote class="quote2 main-quote">Some bits are functionally and stylishly pointless but are here to
+                show what I've learnt!</blockquote>
+            <blockquote class="quote3 main-quote">I could have used a template to make it look better, but that wouldn't
+                accurately show my progress!</blockquote>
             <blockquote class="quote4 main-quote">Scroll down and check out the rest of my page to see more</blockquote>
-            <blockquote class="quote5 main-quote">It is non-responsive yet because that is coming later in my course! You know how to help solve that 😉</blockquote>
+            <blockquote class="quote5 main-quote">It is non-responsive yet because that is coming later in my course!
+                You know how to help solve that 😉</blockquote>
         </div>
         <div class="main-right">
             <img class="profile-picture" src="./Images/Chef moustache short.png"
                 alt="picture of me when I was a chef and had a moustache">
         </div>
     </section>
-    <img class="seperator pre-cover-letter" src="./Images/IMG_20201201_192649.jpg"
-        alt="picture of sun and sea used to seperate the sections">
-    <section class="cover-letter" id="cover-letter-linkup">
-        <h1>Kia Ora, thanks for taking the time to view my page!</h1>
+    <!-- <img class="seperator pre-cover-letter" id="cover-letter-linkup" src="./Images/IMG_20201201_192649.jpg"
+        alt="picture of sun and sea used to seperate the sections"> -->
+    <section class="cover-letter">
+        <div class="cover-letter-gap">
+            <h1>Kia Ora,</h1> 
+            <h1>thanks for taking the time to view my page!</h1>
+        </div>
+        <div class="cover-letter-text" id="bueast">
+            <p>I am a 35-year-old male chef, born in New Zealand but living in the UK and I'm looking to get my first
+                job as
+                a junior Full Stack Web Developer. I am also open to other avenues within the tech industry. If you're
+                willing to take a chance on me, I'm happy to take a chance on you!</p>
 
-        <p>I am a 35-year-old male chef, born in New Zealand but living in the UK and I'm looking to get my first job as
-            a junior Full Stack Web Developer. I am also open to other avenues within the tech industry. If you're
-            willing to take a chance on me, I'm happy to take a chance on you!</p>
+            <p>Web Development is a skill I am currently teaching myself in my spare time by doing the free online
+                course,
+                The Odin Project. Along side the course, I am completing practice exercises, studying curricular and
+                extra
+                curricular modules to gain many different perspective using <a href="https://www.freecodecamp.org/">FreeCodeCamp.org</a>, <a href="https://www.w3schools.com/">w3schools</a>, <a href="https://developer.mozilla.org/en-US/">MDN</a>,
+                <a href="https://javascript.info/">Javascript.info</a>, <a href="https://css-tricks.com/">CSS-tricks</a>, <a href="https://stackoverflow.com/">Stack overflow</a>, <a href="https://www.frontendmentor.io/">Frontend Mentor</a> and various YouTube channels. The YouTube
+                channels I like and follow the most are <a href="https://www.youtube.com/@KevinPowell">Kevin Powell</a>, <a href="https://www.youtube.com/@WebDevSimplified">WebDev simplified</a>, <a href="https://www.youtube.com/@programmingwithmosh">Programming with Mosh</a>,
+                <a href="https://www.youtube.com/@freecodecamp">FreeCodeCamp.org</a>, <a href="https://www.youtube.com/@dcode-software">dcode</a> and <a href="https://www.youtube.com/@akshaymarch7">Akshay Saini</a>. I am gradually working on <a href="https://www.youtube.com/watch?v=VuN8qwZoego&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH&ab_channel=WesBos">Wes Bos' YouTube/GitHub 30
+                Javascript exercises in 30 days</a> as a part of the <a href="https://www.theodinproject.com/">Odin Project</a>.</p>
+                <a href=""></a>
+            <p>My progress is ever changing at a daily rate, but as it stands, I am competent in both HTML and CSS and I
+                know the basics of Javascript. I will try show you an accurate summary of where I'm at. My progress is
+                slower than it could be because it is broken up with my work, but that will change dramatically when you
+                hire me!</p>
 
-        <p>Web Development is a skill I am currently teaching myself in my spare time by doing the free online course,
-            The Odin Project. Along side the course, I am completing practice exercises, studying curricular and extra
-            curricular modules to gain many different perspective using FreeCodeCamp.org, w3schools, MDN,
-            Javascript.info, CSS-tricks, Stack overflow, Frontend Mentor and various YouTube channels. The YouTube
-            channels I like and follow the most are Kevin Powell, WebDev simplified, Programming with Mosh,
-            FreeCodeCamp.org, dcode and Akshay Saini. I am gradually working on Wes Bos' YouTube/GitHub 30 Javascript
-            exercises in 30 days as a part of the Odin Project.</p>
-
-        <p>My progress is ever changing at a daily rate, but as it stands, I am competent in both HTML and CSS and I
-            know the basics of Javascript. I will try show you an accurate summary of where I'm at. My progress is
-            slower than it could be because it is broken up with my work, but that will change dramatically when you
-            hire me!</p>
-
-        <p>I have a vast range of hospitality skills and experience that I am sure can be transferred, as I have been
-            employed in different areas of the trade since 2006 in UK, New Zealand, and Australia. I trained as a chef
-            and made it upto Head Chef before I made the decision to try switch careers. Before training as a Chef, I
-            worked for 18 months in a bar, being trained up in all areas up to duty manager.</p>
+            <p>I have a vast range of hospitality skills and experience that I am sure can be transferred, as I have
+                been
+                employed in different areas of the trade since 2006 in UK, New Zealand, and Australia. I trained as a
+                chef
+                and made it upto Head Chef before I made the decision to try switch careers. Before training as a Chef,
+                I
+                worked for 18 months in a bar, being trained up in all areas up to duty manager.</p>
+        </div>
+        
     </section>
-    <img src="./Images/IMG_20201125_201954.jpg" alt="view from Luke's balcony. Seperating the sections with some nice views" class="seperator bottom-cover-letter">
+    <div class="image-container-bottom-cover-letter">
+        <img src="./Images/IMG_20201125_201954.jpg"
+            alt="view from Luke's balcony. Seperating the sections with some nice views"
+            class="seperator bottom-cover-letter-image">
+    </div>
+    <section class="my-past-section">
+        <h1>My past</h1>
+    </section>
 </body>
 <footer>
     <div class="social-media-boxes">
