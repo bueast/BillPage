@@ -24,8 +24,7 @@ a {
 
 body {
     background-color: black;
-    /* display: flex;
-    flex-wrap: wrap; */
+
 }
 
 .head {
@@ -47,7 +46,6 @@ body {
 .head>.name {
     display: flex;
     justify-content: flex-start;
-    /* color: rgb(216, 214, 214); */
     padding-left: 1rem;
     font-size: 2rem;
 }
@@ -62,7 +60,7 @@ body {
     justify-content: flex-end;
     gap: 1rem;
     padding-right: 2rem;
-    font-size: 1.   5rem;
+    font-size: 1.5rem;
 }
 
 .dropdown .dropdown-content {
@@ -72,7 +70,7 @@ body {
     min-width: 160px;
     border: 2px solid var(--primary-silver);
     flex-direction: column;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    margin-top: .5rem;
   }
   
   .dropdown:hover .dropdown-content {
