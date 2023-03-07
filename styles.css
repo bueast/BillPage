@@ -7,6 +7,12 @@
     --primary-dark: rgb(5, 4, 4);
 }
 
+a {
+    text-decoration: none;
+    color: var(--primary-silver);
+    display: inline;
+}
+
 .head > .top-links > a {
     text-decoration: none;
     color: var(--primary-silver);
@@ -288,21 +294,91 @@ flex-direction: column;
     align-items: center;
 }
 
-.bottom-cover-letter-image {
+.seperator {
     height: 220px;
     width: auto;
-    margin-top: 125px;
     /* margin-left: 30%; */
+    margin-top: 2rem;
+}
+
+.bottom-cover-letter-image {
+    margin-top: 125px;
 }
 
 .my-past-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .my-past-section > h1 {
-    color: var(--primary-silver);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-dark);
     margin-top: 5rem;
     font-size: 4rem;
+    width: 100%;
+    height: 10rem;
+    background-color: var(--primary-silver);
 }
+
+.my-past-section > .past-text { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-silver);
+    width: 80%;
+    margin-top: 5rem;
+}
+
+.my-past-section > .past-text > .born, 
+.primary-school, 
+.primary-sports, 
+.high-school,
+.later-high-school,
+.travelling,
+.first-trip-home { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 2rem;
+}
+
+ .year { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid blueviolet; */
+    width: 40%;
+    padding-left: 5rem;
+}
+
+.table { 
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid blue; */
+    width: 60%;
+    
+}
+
+.past-text a {
+    display: inline;
+}
+
+
+.past-text a:hover {
+    color: purple;
+}
+
+
+
+
