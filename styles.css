@@ -10,7 +10,9 @@
 a {
     text-decoration: none;
     color: var(--primary-silver);
-    display: inline;
+    /* white-space: nowrap; */
+    /* display: inline-block; */
+    word-break:keep-all;
 }
 
 .head > .top-links > a {
@@ -229,31 +231,17 @@ flex-direction: column;
     font-size: 3rem;
 }
 
-/* .cover-letter-gap h1:second-child {
-    font-size: 1.5rem;
-} */
-
 
 .cover-letter > .cover-letter-text {
-    /* position: absolute; */
-    
     color: var(--primary-silver);
     text-align: center;
-    /* flex: 1; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* box-sizing: border-box; */
     height: 50%;
     margin: 0 2rem;
     font-size: 1.2rem;
     line-height: 1.3rem;
-    /* margin-top: -40rem; */
-    /* opacity: 1; */
-    
-    
-    /* background-color: transparent;
-    border: 2px solid blue; */
 }
 
 .cover-letter > .cover-letter-text > p > a {
@@ -287,23 +275,12 @@ flex-direction: column;
 }
 
 #bueast > p {
-    /* position: relative; */
- background-color: transparent;
- /* height: 100%;
- width: 100%; */
-    backdrop-filter: blur(6px);
-    /* z-index: 1;  */
-    animation: cover-letter-text-slide 1s ease-in-out forwards;
+
+background-color: transparent;
+backdrop-filter: blur(6px);
+animation: cover-letter-text-slide 1s ease-in-out forwards;
     
 }
-
-/* .pre-cover-letter {
-    height: 1500px;
-    width: 100%;
-    opacity: .5;
-} */
-
-
 
 .image-container-bottom-cover-letter {
     display: flex;
@@ -314,7 +291,6 @@ flex-direction: column;
 .separator {
     height: 220px;
     width: auto;
-    /* margin-left: 30%; */
     margin-top: 2rem;
 }
 
@@ -389,7 +365,6 @@ flex-direction: column;
 
 .past-text .table { 
     display: flex;
-    /* flex-direction: column; */
     justify-content: flex-start;
     align-items: center;
     /* border: 2px solid blue; */
@@ -398,7 +373,8 @@ flex-direction: column;
 }
 
 .past-text a {
-    display: inline;
+    /* display: inline; */
+    word-break:keep-all;
 }
 
 
@@ -427,5 +403,5 @@ img {
 }
 
 .table a {
-    display: inline;
+    /* display: inline; */
 }
