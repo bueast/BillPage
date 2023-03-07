@@ -65,10 +65,28 @@ body {
     font-size: 1.   5rem;
 }
 
-@media screen and (max-width: 600px) {
-    .main-left > blockquote {
-      display: none;
-    }
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 160px;
+    border: 2px solid var(--primary-silver);
+    flex-direction: column;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-content a {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  .dropdown-content a:hover {
+    color: red;
   }
 
 .main-section {
@@ -346,7 +364,13 @@ flex-direction: column;
 .australia,
 .back-to-england,
 .hit-by-a-car,
-.back-to-work { 
+.back-to-work,
+.move-to-birmingham,
+.freelancing,
+.lockdown,
+.back-to-new-zealand,
+.back-to-england-again,
+.today { 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -356,16 +380,16 @@ flex-direction: column;
     margin-top: 2rem;
 }
 
- .year { 
+ .past-text .year { 
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items:first baseline;
     /* border: 2px solid blueviolet; */
     width: 40%;
     padding-left: 5rem;
 }
 
-.table { 
+.past-text .table { 
     display: flex;
     /* flex-direction: column; */
     justify-content: flex-start;
@@ -386,4 +410,24 @@ flex-direction: column;
 
 .kangaroo {
     margin: 5rem 0;
+}
+
+.food-images,
+.lockdown-images {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.covid-lockdowns {
+    margin: 5rem 0;
+    font-size: 5rem;
+}
+
+.table a {
+    display: inline;
 }
