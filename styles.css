@@ -94,6 +94,7 @@ body {
 .main-section>.main-right>.profile-picture {
     /* margin: auto; */
     border-radius: 50%;
+    height: 700px;
 }
 
 .main-section>.main-left {
@@ -294,7 +295,7 @@ flex-direction: column;
     align-items: center;
 }
 
-.seperator {
+.separator {
     height: 220px;
     width: auto;
     /* margin-left: 30%; */
@@ -341,7 +342,11 @@ flex-direction: column;
 .high-school,
 .later-high-school,
 .travelling,
-.first-trip-home { 
+.first-trip-home,
+.australia,
+.back-to-england,
+.hit-by-a-car,
+.back-to-work { 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -376,9 +381,9 @@ flex-direction: column;
 
 
 .past-text a:hover {
-    color: purple;
+    color: red;
 }
 
-
-
-
+.kangaroo {
+    margin: 5rem 0;
+}
